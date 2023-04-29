@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #cce4f7;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #3f7eb5;
+    padding: 10px;
+}
+
+.nav-button {
+    font-size: 18px;
+    padding: 8px 12px;
+    background-color: #3f7eb5;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    outline: none;
+}
+
+.nav-button:hover {
+    background-color: #5c92c0;
+}
+
+.nav-button:active {
+    background-color: #799fcb;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.calculator {
+    background-color: #414a4c;
+    padding: 30px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 400px;
+    box-sizing: border-box;
+}
+
+.display {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #f2f2f2;
+    text-align: right;
+    font-size: 36px;
+    border: 2px solid #5c5c5c;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.calc-button {
+    font-weight: bold;
+    border: 1px solid #000000;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.calc-button:hover {
+    filter: brightness(110%);
+}
+
+.calc-button:active {
+    filter: brightness(120%);
+}
+
+.calc-button.number {
+    background-color: #d9d9d9;
+    color: #000000;
+}
+
+.calc-button.operation {
+    background-color: #ff9800;
+    color: #ffffff;
+}
+
+.calc-button.equal {
+    background-color: #2196f3;
+    color: #ffffff;
+}
+
+.calc-button.clear {
+    background-color: #f44336;
+    color: #ffffff;
+}
+
+.calc-button.memory {
+    background-color: #4caf50;
+    color: #ffffff;
+}
+
+.calc-button.double-width {
+    grid-column: span 2;
+}
+
+.calc-button.double-height {
+    grid-row: span 2;
+}
